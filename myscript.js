@@ -29,10 +29,22 @@ var classRoom =
 {
   studentName: "Vittorio",
   studentSurname: "Verdi"
+},
+
+{
+  studentName: "",
+  studentSurname: "",
+  studentAge :  ""
+
 }
 
 ]
 
 for (var i = 0; i < classRoom.length; i++) {
-console.log(classRoom[i]["studentName"]);
+console.log(classRoom[i]["studentName"] + " " + classRoom[i]["studentSurname"] );
 }
+classRoom[3]["studentName"] = prompt("Inserisci il tuo nome");
+classRoom[3]["studentSurname"] = prompt("Inserisci il tuo cognome");
+classRoom[3]["studentAge"] = prompt("Inserisci la tua età");
+
+console.log(classRoom);
