@@ -1,11 +1,8 @@
 // CREAZIONE OGGETTO STUDENTE
 var student = {
   age: 30,
-  name: "Mike",
-  faculty: "it",
-  credits: 22,
-  sports: "football",
-  hobbies: ["music","gaming","hunting"]
+  name: "Sergio",
+  surname: "Marretta"
 
 }
 
@@ -14,4 +11,28 @@ var student = {
 for (var key in student) {
 console.log(key);
 }
-// INTERAZIONE UTENTE AGGIUNTA OGGETTI
+
+//CREAZIONE ARRAY OGGETTI STUDENTI
+var classRoom =
+[
+
+{
+  studentName: "Paolo",
+  studentSurname: "Bianchi"
+},
+
+{
+  studentName: "Guido",
+  studentSurname: "Rossi"
+},
+
+{
+  studentName: "Vittorio",
+  studentSurname: "Verdi"
+}
+
+]
+
+for (var i = 0; i < classRoom.length; i++) {
+console.log(classRoom[i]["studentName"]);
+}
